@@ -1,0 +1,45 @@
+# Visual Studio / Rider / Xamarin
+.vscode/
+.vs/
+.idea/
+*.sln.iml
+*.ipr
+*.iws
+*.DS_Store
+
+# Compiled files
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+AnyCPU/
+*.dbmdl
+
+# NuGet packages
+packages/
+*.nupkg
+*.paket.exe
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Misc
+node_modules/
+*.lock
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider
+.ideaMisc.xml
+
