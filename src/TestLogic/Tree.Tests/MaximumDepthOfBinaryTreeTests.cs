@@ -1,7 +1,5 @@
-using Xunit;
 using QuestionCollection.DS;
 using QuestionCollection.Questions;
-using TestLogic.Tree.Tests;
 
 namespace TestLogic.Tree.Tests
 {
@@ -67,7 +65,7 @@ namespace TestLogic.Tree.Tests
         public void Test3()
         {
             // Arrange
-            TreeNode root = null;
+            TreeNode? root = null;
 
             // Act
             int depth = MaximumDepthOfBinaryTree.Execute(root);
