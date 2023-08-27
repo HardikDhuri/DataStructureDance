@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningLogic", "LearningLogic\LearningLogic.csproj", "{263BF92B-B7E6-4F4F-837B-DAA3D34A60E9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestionCollection", "QuestionCollection\QuestionCollection.csproj", "{6F6F78AB-F4EC-4D95-9B8B-EF8CDB10868F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLogic", "TestLogic\TestLogic.csproj", "{7333E398-C075-4D72-8768-5DBBE2EE2AF1}"
@@ -18,10 +16,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{263BF92B-B7E6-4F4F-837B-DAA3D34A60E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{263BF92B-B7E6-4F4F-837B-DAA3D34A60E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{263BF92B-B7E6-4F4F-837B-DAA3D34A60E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{263BF92B-B7E6-4F4F-837B-DAA3D34A60E9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F6F78AB-F4EC-4D95-9B8B-EF8CDB10868F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F6F78AB-F4EC-4D95-9B8B-EF8CDB10868F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F6F78AB-F4EC-4D95-9B8B-EF8CDB10868F}.Release|Any CPU.ActiveCfg = Release|Any CPU
