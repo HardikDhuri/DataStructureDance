@@ -17,7 +17,7 @@ namespace TestLogic.Tree.Tests
                 new TreeNode(2, new TreeNode(3), new TreeNode(4)),
                 new TreeNode(2, new TreeNode(4), new TreeNode(3)));
 
-            Assert.True(SymmetricTree.Execute(symmetricTree));
+            Assert.True(TreeQuestions.SymmetricTree(symmetricTree));
         }
 
         //      1
@@ -32,14 +32,14 @@ namespace TestLogic.Tree.Tests
                 new TreeNode(2, null, new TreeNode(3)),
                 new TreeNode(2, null, new TreeNode(3)));
 
-            Assert.False(SymmetricTree.Execute(nonSymmetricTree));
+            Assert.False(TreeQuestions.SymmetricTree(nonSymmetricTree));
         }
 
         // Empty tree
         [Fact]
         public void TestEmptyTree()
         {
-            Assert.True(SymmetricTree.Execute(null));
+            Assert.True(TreeQuestions.SymmetricTree(null));
         }
 
         // Single-node tree
@@ -49,7 +49,7 @@ namespace TestLogic.Tree.Tests
         {
             TreeNode singleNodeTree = new TreeNode(1);
 
-            Assert.True(SymmetricTree.Execute(singleNodeTree));
+            Assert.True(TreeQuestions.SymmetricTree(singleNodeTree));
         }
 
         //      1
@@ -64,7 +64,7 @@ namespace TestLogic.Tree.Tests
                 new TreeNode(2, new TreeNode(3), new TreeNode(4)),
                 new TreeNode(2, new TreeNode(5), new TreeNode(3)));
 
-            Assert.False(SymmetricTree.Execute(differentValuesTree));
+            Assert.False(TreeQuestions.SymmetricTree(differentValuesTree));
         }
     }
 }

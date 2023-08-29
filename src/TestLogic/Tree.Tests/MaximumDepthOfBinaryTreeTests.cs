@@ -25,7 +25,7 @@ namespace TestLogic.Tree.Tests
              */
 
             // Act
-            int depth = MaximumDepthOfBinaryTree.Execute(root);
+            int depth = TreeQuestions.MaximumDepthOfBinaryTree(root);
 
             // Assert
             Assert.Equal(3, depth);
@@ -55,7 +55,7 @@ namespace TestLogic.Tree.Tests
              */
 
             // Act
-            int depth = MaximumDepthOfBinaryTree.Execute(root);
+            int depth = TreeQuestions.MaximumDepthOfBinaryTree(root);
 
             // Assert
             Assert.Equal(4, depth);
@@ -68,7 +68,7 @@ namespace TestLogic.Tree.Tests
             TreeNode? root = null;
 
             // Act
-            int depth = MaximumDepthOfBinaryTree.Execute(root);
+            int depth = TreeQuestions.MaximumDepthOfBinaryTree(root);
 
             // Assert
             Assert.Equal(0, depth);
@@ -81,7 +81,7 @@ namespace TestLogic.Tree.Tests
             TreeNode root = new TreeNode(1);
 
             // Act
-            int depth = MaximumDepthOfBinaryTree.Execute(root);
+            int depth = TreeQuestions.MaximumDepthOfBinaryTree(root);
 
             // Assert
             Assert.Equal(1, depth);
@@ -114,7 +114,7 @@ namespace TestLogic.Tree.Tests
              */
 
             // Act
-            int depth = MaximumDepthOfBinaryTree.Execute(root);
+            int depth = TreeQuestions.MaximumDepthOfBinaryTree(root);
 
             // Assert
             Assert.Equal(6, depth);
