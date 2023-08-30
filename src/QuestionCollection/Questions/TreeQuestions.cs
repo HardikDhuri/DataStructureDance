@@ -44,4 +44,37 @@ public static class TreeQuestions
 
         return IsSameTree(p.Left, q.Left) && IsSameTree(p.Right, q.Right) && p.Val == q.Val;
     }
+
+    public static IList<IList<int>> LevelOrderTraversal(TreeNode root)
+    {
+        var result = new List<IList<int>>();
+        LevelOrder(root, result);
+        return result;
+    }
+
+    private static void LevelOrder(TreeNode? root, List<IList<int>> result)
+    {
+        if (root == null) return;
+
+        var queue = new Queue<TreeNode?>();
+        queue.Enqueue(root);
+
+        while (queue.Count > 0)
+        {
+            var subList = new List<int>();
+            var sizeOfQueue = queue.Count;
+
+            for (int i = 0; i < sizeOfQueue; i++)
+            {
+                var node = queue.Dequeue();
+                subList.Add(node.Val);
+
+                if (node.Left != null) queue.Enqueue(node.Left);
+                if (node.Right != null) queue.Enqueue(node.Right);
+            }
+
+            result.Add(subList);
+        }
+    }
+    
 }
