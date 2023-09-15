@@ -14,6 +14,25 @@ public static class TreeQuestions
         return 1 + Math.Max(left, right);
     }
     
+      public bool IsValidBST(TreeNode root) 
+    {
+        return Evaluate(root, long.MinValue, long.MaxValue);
+    }
+
+    private bool Evaluate(TreeNode node, long min, long max)
+    {
+        if (node == null)
+        {
+            return true;
+        }
+
+        return (
+            node.val > min &&
+            node.val < max &&
+            Evaluate(node.left, min, node.val) &&
+            Evaluate(node.right, node.val, max)
+        );
+    }
     public static bool SymmetricTree(TreeNode? root)
     {
         if (root == null) return true;
